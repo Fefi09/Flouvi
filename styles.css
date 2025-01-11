@@ -1,0 +1,276 @@
+/* Estilos gerais */
+body {
+  font-family: 'Inter', sans-serif;
+  background: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  position: relative;
+  background: #333;
+  padding: 1rem;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Menu de ícones na página inicial */
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
+
+.menu-icon span {
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+/* Barra de navegação (menu) */
+.nav-container {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab {
+  background: #444;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 80%;
+  margin: 10px 0;
+}
+
+.tab:hover {
+  background: #555;
+}
+
+.tab-content {
+  display: none;
+  padding: 1rem;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Produtos */
+.category {
+  margin-top: 30px;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  background: #444;
+  border: 1px solid #555;
+  border-radius: 10px;
+  width: 250px;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.product h3 {
+  font-size: 1.2rem;
+}
+
+.product p {
+  font-size: 1rem;
+}
+
+/* Estilos para tabelas dentro das abas "Blox Fruit" e "Ups Blox Fruit" */
+
+/* Tabelas */
+table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+  background-color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #444;
+  color: #000;  /* Cor do texto dentro da tabela (agora preta) */
+}
+
+table th {
+  background-color: #666;
+  color: #fff;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #fff;
+}
+
+table tr:nth-child(odd) {
+  background-color: #d3d3d3;
+}
+
+table tr:hover {
+  background-color: #777;
+}
+
+/* Estilos específicos para cada aba e tabela */
+
+/* Aba "Blox Fruit" */
+#bloxfruit h3 {
+  color: #fff;
+}
+
+#bloxfruit .product-table {
+  margin-top: 20px;
+}
+
+/* Aba "Ups Blox Fruit" */
+#ups h3 {
+  color: #fff;
+}
+
+#ups h4 {
+  color: #fff;
+  margin-top: 15px;
+}
+
+#ups h4 + table {
+  margin-top: 10px;
+}
+
+/* Cabeçalhos das tabelas */
+h3 {
+  color: #fff;
+  margin-top: 20px;
+}
+
+h4 {
+  color: #ccc;
+  margin-top: 15px;
+}
+
+h4 + table {
+  margin-top: 10px;
+}
+
+/* Estilos para os Botões de Contato */
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-buttons .btn {
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.social-buttons .btn:hover {
+  background-color: #0056b3;
+}
+
+.social-buttons .btn:active {
+  background-color: #00408b;
+}
+
+/* Botão de email na seção de Contato */
+.email-button {
+  margin-top: 20px;
+}
+
+.email-button .btn {
+  background-color: #28a745;
+  color: #fff;  /* Adicione esta linha para garantir que o texto fique branco */
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.email-button .btn:hover {
+  background-color: #218838;
+}
+
+.email-button .btn:active {
+  background-color: #1e7e34;
+}
+
+/* Botão do Discord */
+.social-buttons .btn.discord {
+  background: linear-gradient(45deg, #7289da, #7289da, #36393e, #282b30, #1e2124); /* Gradiente de várias cores */
+  color: #fff; /* Texto branco */
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.social-buttons .btn.discord:hover {
+  background: linear-gradient(45deg, #424549, #36393e, #282b30, #1e2124, #7289da); /* Inverter a ordem do gradiente */
+}
+
+.social-buttons .btn.discord:active {
+  background: linear-gradient(45deg, #36393e, #282b30, #1e2124, #7289da, #424549); /* Outra variação para o efeito de clique */
+}
+
+/* Estilo para o botão do Instagram */
+.social-buttons .btn.instagram {
+  background: linear-gradient(45deg, #515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529); /* Gradiente de várias cores */
+  color: #fff; /* Texto branco */
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.social-buttons .btn.instagram:hover {
+  background: linear-gradient(45deg, #8134AF, #DD2A7B, #FEDA77, #F58529, #515BD4); /* Inverter a ordem do gradiente */
+}
+
+.social-buttons .btn.instagram:active {
+  background: linear-gradient(45deg, #DD2A7B, #FEDA77, #F58529, #515BD4, #8134AF); /* Outra variação para o efeito de clique */
+}
+}
